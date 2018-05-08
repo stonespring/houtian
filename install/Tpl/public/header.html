@@ -1,0 +1,30 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<title>{:L('page_title')}</title>
+<load href="__TMPL__public/css/install.css" />
+<load href="__TMPL__public/js/jquery.js" />
+</head>
+
+<body>
+<div class="header">
+	<div class="logo fl"></div>
+    <div class="fr">
+    	<ul class="top_nav fr">
+        	<li><a href="http://houtianbest.cn/" target="_blank">{:L('official_bbs')}</a></li>
+            <li><a href="http://www.houtianbest.cn/" target="_blank">后天网络</a></li>
+        </ul>
+    </div>
+</div>
+<div class="content">
+	<div class="step fl">
+    	<h3>开始安装程序</h3>
+        <ul>
+        	<li <if condition="$step_curr eq 'eula'">class="curr"</if>><h4>{:L('step_eula')}</h4></li>
+            <li <if condition="$step_curr eq 'check'">class="curr"</if>><h4>{:L('step_check')}</h4></li>
+            <li <if condition="$step_curr eq 'setconf'">class="curr"</if>><h4>{:L('step_setconf')}</h4></li>
+            <li <if condition="$step_curr eq 'install'">class="curr"</if>><h4>{:L('step_install')}</h4></li>
+            <li <if condition="$step_curr eq 'finish'">class="curr"</if>><h4>{:L('step_finish')}</h4></li>
+        </ul>
+    </div>
